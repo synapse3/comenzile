@@ -1,0 +1,23 @@
+{
+  "config": {
+    "default": "ro"
+  },
+  "language": {
+    "ro": {
+      "[lang-title]": "Cabinetul meu",
+      "[lang-cart]": "Comenzile mele",
+      "[lang-toate]": "Toate",
+      "[lang-lucru]": "În lucru",
+      "[lang-livrate]": "Livrate",
+      "[lang-anulate]": "Anulate"
+    },
+    "ru": {
+      "[lang-title]": "Личный кабинет",
+      "[lang-cart]": "Мои заказы",
+      "[lang-toate]": "Все",
+      "[lang-lucru]": "В работе",
+      "[lang-livrate]": "Отправленные",
+      "[lang-anulate]": "Отказ"
+    }
+  }
+}

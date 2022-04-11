@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Pack v.1.5</title>
+  <title>Comenzile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -12,34 +12,910 @@
     <!--Bootstrap Select-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Burger -->
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+
     <!-- Main -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!--JS-->
-    <!--jQuery-->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <!--Bootstrap-->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
 
 </head>
 <body>
 
-<header class="container">
-  <div class="border">header</div>
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="container-fluid px-3">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <div class="col-1 me-lg-auto">
+        <div class="hamburger hamburger--squeeze" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-5">
+        <div class="header-search">
+          <input type="text" class="form-control" placeholder="Căutare">
+          <button> <img class="ico" src="image/header/search.svg"> </button>
+        </div>
+      </div>
+      <div class="d-inline-flex flex-wrap align-items-center">
+        <div class="header-tools d-none d-md-block">
+          <a href="" class="user"> <img class="ico" src="image/header/user.svg"> </a>
+        </div>
+        <div class="header-tools">
+          <div class="form-check form-switch">
+            <input class="form-check-input" id="langcheck" type="checkbox">
+            <label for="langcheck" class="ru">ro</label>
+            <label for="langcheck" class="ro">ru</label>
+          </div>
+        </div>
+        <div class="header-tools">
+          <a href="" class="basket"> 
+            <img class="ico" src="image/header/basket.svg">
+            <div class="basket-count">8</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hide Menu -->
+  <div class="collapse" id="collapseExample">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <ul class="nav navigation flex-column">
+            <li class="nav-item"> <a href="" class="nav-link">Главная</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Категория</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">О компании</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Избранное</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Контакты</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <ul class="nav navigation flex-column">
+            <li class="nav-item"> <a href="" class="nav-link">Главная</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Категория</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">О компании</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Избранное</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Контакты</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <ul class="nav navigation flex-column">
+            <li class="nav-item"> <a href="" class="nav-link">Главная</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Категория</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">О компании</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Избранное</a> </li>
+            <li class="nav-item"> <a href="" class="nav-link">Контакты</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <ul class="nav navigation flex-column">
+            <li class="nav-item"> <a class="nav-link">Телефон: +373 69 12 34 65</a> </li>
+            <li class="nav-item"> <a class="nav-link">Email: info@comenzile.md </a> </li>
+            <li class="nav-item"> <a class="nav-link">Рабочее время: ПН - ПТ с 8:00 до 18:00</a> </li>
+            <li class="nav-item"> <a class="nav-link">Сайт: www.comenzile.md</a> </li>
+            <li class="nav-item"> <a class="nav-link">Адрес: г.Кишинев, ул. Пушкина 24, оф. 301</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
-<div class="container my-3">
+<!-- CONTENT -->
+<div class="container my-lg-3">
   <div class="row">
-    <div class="col-4">
-      <div class="border">sidebar</div>
+
+    <!-- SIDEBAR -->
+    <div class="col-lg-4 order-lg-1 order-2 mt-5 mt-lg-0">
+      <ul class="nav flex-column sidebar">
+        <li class="nav-item d-flex align-items-center flex-wrap justify-content-between">
+          <div class="text-grey fw-700 t-20" lang-title>Cabinetul meu </div>
+          <img src="image/sidebar/barcode.svg">
+        </li>
+        <li class="nav-item">
+          <div class="sidebar-icon"> <img class="ico" src="image/sidebar/wallet.svg" width="27" height="27"> </div>
+          <div class="sidebar-info w-100 d-flex flex-wrap align-items-center justify-content-between">
+            <span class="fw-500 t-18 t-16m">Cashback disponibil</span>
+            <span class="text-orange fw-500 t-22">268.05 lei</span>
+          </div>
+        </li>
+        <li class="nav-item">
+          <ul class="nav flex-column sidebar-info">
+            <li class="fw-500 t-18 t-16m">Valabilitatea cashback-ului</li>
+            <li>
+              <span class="fw-300 t-14">Expiră pe 31.12.2022</span>
+              <span class="fw-500 t-14">168 lei</span>
+            </li>
+            <li>
+              <span class="fw-300 t-14">Expiră pe 31.12.2023</span>
+              <span class="fw-500 t-14">100 lei</span>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item cashback">
+          <div class="sidebar-info">
+            <span class="fw-300 t-18">Cashback în așteptare</span>
+            <span class="fw-500">168 lei</span>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="">
+            <span class="sidebar-icon"> <img class="ico" src="image/sidebar/user.svg" width="34" height="34"> </span>
+            <span class="sidebar-info">Profilul meu</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="">
+            <span class="sidebar-icon"> <img class="ico" src="image/sidebar/address.svg" width="34" height="34"> </span>
+            <span class="sidebar-info">Adresele mele</span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a href="">
+            <span class="sidebar-icon"> <img class="ico" src="image/sidebar/cart.svg" width="34" height="34"> </span>
+            <span class="sidebar-info">Comenzile mele</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="">
+            <span class="sidebar-icon"> <img class="ico" src="image/sidebar/history.svg" width="34" height="34"> </span>
+            <span class="sidebar-info">Istoria Cashback-ului</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="">
+            <span class="sidebar-icon"> <img class="ico" src="image/sidebar/heart.svg" width="34" height="34"> </span>
+            <span class="sidebar-info">Wish list-ul meu</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="">
+            <span class="sidebar-icon"> <img class="ico" src="image/sidebar/logout.svg" width="34" height="34"> </span>
+            <span class="sidebar-info">Delogare</span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="col-8">
-      <div class="border">content</div>
+
+    <!-- ITEMS -->
+    <div class="col-lg-8 order-lg-2 order-1 mt-lg-0 mt-md-3 mt-0">
+      <div class="cart-title">
+
+        <!-- Back -->
+        <div class="backpage d-block d-md-none">
+          <div class="px-3">
+            <a href=""><img class="ico" src="image/sidebar/arrow-left-dark.svg"> Înapoi</a>
+          </div>
+          <hr>
+        </div>
+
+        <div class="px-3 fw-700 t-20" lang-cart>Comenzile mele</div>
+        <hr class="d-none d-md-block">
+        <div class="px-3">
+          <div class="nav justify-content-between" id="nav-tab" role="tablist">
+            <a role="burron" class="active" data-bs-toggle="tab" data-bs-target="#tab-1" role="tab" aria-selected="true"><span lang-toate>Toate</span> <span>(7)</span></a>
+            <a role="burron" class="" data-bs-toggle="tab" data-bs-target="#tab-2" role="tab" aria-selected="false"><span lang-lucru>În lucru</span> <span>(4)</span></a>
+            <a role="burron" class="" data-bs-toggle="tab" data-bs-target="#tab-3" role="tab" aria-selected="false"><span lang-livrate>Livrate</span> <span>(1)</span></a>
+            <a role="burron" class="" data-bs-toggle="tab" data-bs-target="#tab-4" role="tab" aria-selected="false"><span lang-anulate>Anulate</span> <span>(2)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="nav-tabContent">
+        <!-- Tab's 1 -->
+        <div class="tab-pane fade show active" id="tab-1">
+          <!-- Item 1 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#1XM442</span> </div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-lg-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item1.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 6</span>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#2XM442</span> </div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-green fw-500">Livrat</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2 pay">Achitat cu cardul: XXX...1234</div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item2.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 7</span>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#3XM442</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-danger fw-500">Anulat</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2 pay text-danger">Restituit cardului: XXX...1234</div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item3.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 8</span>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#4XM442</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-danger fw-500">Anulat</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2 pay text-danger"> &nbsp; </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item4.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 9</span>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#5XM441</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item5.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 10</span>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#6XM441</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item6.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 11</span>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#7XM441</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item7.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 12</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tab's 2 -->
+        <div class="tab-pane fade" id="tab-2">
+          <!-- Item 1 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#1XM441</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item1.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 6</span>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#5XM441</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item5.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 10</span>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#6XM441</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item6.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 11</span>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#7XM441</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-blue fw-500">În lucru</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2"> <div class="pay online">Achită online </div> </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item7.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 12</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tab's 3 -->
+        <div class="tab-pane fade" id="tab-3">
+          <!-- Item 2 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#2XM442</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-green fw-500">Livrat</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2 pay">Achitat cu cardul: XXX...1234</div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item2.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Card</span>
+                </div>
+                <div class="col-4">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 7</span>
+            </div>
+          </div>
+        </div>
+        <!-- Tab's 4 -->
+        <div class="tab-pane fade" id="tab-4">
+          <!-- Item 3 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#3XM442</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-danger fw-500">Anulat</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2 pay text-danger">Restituit cardului: XXX...1234</div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item3.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 8</span>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="box-item">
+            <div class="bi-band">
+              <div class="bib-header d-flex flex-wrap align-items-center justify-content-between">
+                <div class="col-md-auto col-6 order-md-1 order-1"> <div class="sku">Comanda <span class="text-danger">#4XM442</span></div> </div>
+                <div class="col-md-auto col-6 order-md-2 order-3"> <div class="date">04.03.2021</div> </div>
+                <div class="col-md-auto col-6 order-md-3 order-4 status">Statut: <span class="text-danger fw-500">Anulat</span></div>
+                <div class="col-md-auto col-6 order-md-4 order-2 pay text-danger"> &nbsp; </div>
+              </div>
+            </div>
+            <div class="bi-band info">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-4">
+                  <img src="image/items/item4.jpg" width="100%">
+                </div>
+                <div class="col-lg-10 col-8">
+                  <div class="row align-items-lg-center">
+                    <div class="col-lg-6 mt-lg-0 mt-2 fw-500 t-15m bi-title">Colivie, 40x50 cm, set combo pictură pe numere + mozaic cu diamante</div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 text-lg-end fw-500 t-13">999.99 lei x 10 buc = 9999,99 lei </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band pay">
+              <div class="row">
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Achitare:</span>
+                  <span class="fw-500 t-14">Online</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Livrare:</span>
+                  <span class="fw-500 t-14">38.00 lei</span>
+                </div>
+                <div class="col-4 pay-var">
+                  <span class="text-grey fw-500 t-14">Total:</span>
+                  <span class="fw-500 t-14">10037.99 lei</span>
+                </div>
+              </div>
+            </div>
+            <div class="bi-band delivery">
+              <div class="fw-500 t-14 text-grey">Livrare către:</div>
+              <span class="fw-500 t-14">Cantemir 9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
+
+
+<!--JS: -->
+<!--jQuery-->
+<script src="js/jquery-3.6.0.min.js"></script>
+<!--Bootstrap-->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- HAMBURGERS -->
+<script type="text/javascript" src="js/hamburgers.js"></script>
+
+<script type="text/javascript" src="js/jquery.MultiLanguage.min.js"></script>
+
+<!-- FOR open SVG -->
+<script type="text/javascript">
+  $('img.ico').each(function(){
+    var $img = $(this);
+    var imgClass = $img.attr('class');
+    var imgURL = $img.attr('src');
+    $.get(imgURL, function(data) {
+      var $svg = $(data).find('svg');
+      if(typeof imgClass !== 'undefined') {
+        $svg = $svg.attr('class', imgClass+' replaced-svg');
+      }
+      $svg = $svg.removeAttr('xmlns:a');
+      if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+      }
+      $img.replaceWith($svg);
+    }, 'xml');
+  });
+</script>
+
+
+<script type="text/javascript">
+$(function(){
+  $('#langcheck').change(function(){
+    // $('body').attr('data','ru');
+    if ($('#langcheck').is(':checked')) {
+      $('body').attr('data-lang','ru');
+      $.MultiLanguage('language/language.json', 'ru')
+    } else {
+      $('body').attr('data-lang','ro');
+      $.MultiLanguage('language/language.json', 'ro')
+    }
+  })
+
+  if (localStorage.getItem('MultiLanguage') == 'ro'){
+      $.MultiLanguage('language/language.json', 'ro')
+  } else if (localStorage.getItem('MultiLanguage') == 'ru'){
+      $.MultiLanguage('language/language.json', 'ru')
+      $('#langcheck').prop('checked', true);
+  }
+
+})
+</script>
+
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 1500);
+  }
+</script>
 
 </body>
 </html>
